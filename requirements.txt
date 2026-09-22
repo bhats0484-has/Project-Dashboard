@@ -1,5 +1,7 @@
 streamlit
 pandas
+numpy
+metplotlib
 plotly
 scikit-learn
 statsmodel
