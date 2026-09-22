@@ -30,7 +30,7 @@ st.sidebar.info("**Capstone Project:** End-to-End Retail Sales Intelligence, Seg
 # --- DATA LOADING & CACHING ---
 @st.cache_data
 def load_and_prepare_data():
-    df = pd.read_csv('/content/Superstore.csv', encoding='latin1')
+    df = pd.read_csv('Superstore.csv', encoding='latin1')
     date_col = 'Order Date'
     df[date_col] = pd.to_datetime(df[date_col], dayfirst=True)
     df = df.sort_values(by=date_col)
